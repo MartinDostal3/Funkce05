@@ -19,10 +19,10 @@ bool JeLiche(int n, double& ap, int& pocet)
 		while (n > 0)
 		{
 			int cifra = n % 10;
-			if (cifra % 2 == 1)
+			if (cifra % 2 != 0)
 			{
 				pocetL++;
-				soucetL += n;
+				soucetL += cifra;
 				
 
 			}
