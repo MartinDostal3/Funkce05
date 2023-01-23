@@ -9,6 +9,7 @@ bool JeLiche(int n, double& ap, int& pocet)
 {
 	int soucetL = 0;
 	int pocetL = 0;
+	ap = 0;
 	bool jeLiche = false;
 	if (n % 2 != 0)
 	{
@@ -37,7 +38,11 @@ bool JeLiche(int n, double& ap, int& pocet)
 		pocet = pocetS;
 		
 	}
-	ap = (double)soucetL / pocetL;
+	if (pocetL > 0)
+	{
+		ap = (double)soucetL / pocetL;
+	}
+	
 
 	
 	
